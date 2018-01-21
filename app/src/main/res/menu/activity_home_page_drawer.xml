@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/information_variant"
+            android:title="@string/about_us" />
+
+    <item android:title="@string/nav_drawer_title">
+        <menu>
+            <item
+                android:id="@+id/nav_account"
+                android:icon="@drawable/ic_account_circle_grey_24dp"
+                android:title="@string/account_info" />
+            <item
+                android:id="@+id/nav_sign_up"
+                android:icon="@drawable/login"
+                android:title="@string/sign_up" />
+
+            <item android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/share"/>
+        </menu>
+    </item>
+
+</menu>

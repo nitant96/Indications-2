@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_smaller"
+    android:padding="@dimen/margin_small"
+    app:cardUseCompatPadding="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/padding_smaller">
+
+        <TextView
+            android:id="@+id/card_seller_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/greyColor"
+            android:layout_below="@id/card_seller_name" />
+        <TextView
+            android:id="@+id/card_seller_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dividerView" />
+
+        <TextView
+            android:id="@+id/card_seller_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_seller_address"
+            android:autoLink="phone"
+            android:linksClickable="true"
+            android:text="Name"
+            android:textColorLink="@color/drawer_blue"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size array -->
+    <string-array name="text_size">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <!-- Layout manager array -->
+    <string-array name="layout_manager">
+        <item>Grid Layout</item>
+        <item>Linear Layout</item>
+    </string-array>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "901822549863",
+    "firebase_url": "https://gi-india.firebaseio.com",
+    "project_id": "gi-india",
+    "storage_bucket": "gi-india.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901822549863:android:5419b1a67a6cdd29",
+        "android_client_info": {
+          "package_name": "gov.cipam.gi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901822549863-0h9kbfal95o8b7c8paoi6qk9jhp4p2bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gov.cipam.gi",
+            "certificate_hash": "9810f304c73b5bc14e6573d4e65608396eaee053"
+          }
+        },
+        {
+          "client_id": "901822549863-e7u55due04m8b6h3jq9jik11lktoqhke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMQxwc-BSFv_rN4t1sGXVH1vTBEhygyfw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901822549863-e7u55due04m8b6h3jq9jik11lktoqhke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

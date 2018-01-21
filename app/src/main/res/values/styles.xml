@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/md_light_blue_A700</item>
+        <item name="text_size_primary">@style/LargeBodyText</item>
+        <item name="text_color_primary">@color/gray</item>
+        <item name="text_color_secondary">@color/gray</item>
+        <item name="bottom_nav_color">@color/md_indigo_600</item>
+        <item name="layout_bg">@color/white</item>
+        <item name="category_title">@color/gray_dark</item>
+        <item name="android:windowBackground">@color/off_whiter</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextSizeSmall">
+        <item name="text_size_detail">@style/SmallBodyText</item>
+        <item name="text_size_title">@style/SmallTitleText</item>
+    </style>
+
+    <style name="TextSizeMedium">
+        <item name="text_size_detail">@style/MediumBodyText</item>
+        <item name="text_size_title">@style/MediumTitleText</item>
+    </style>
+
+    <style name="TextSizeLarge">
+        <item name="text_size_detail">@style/LargeBodyText</item>
+        <item name="text_size_title">@style/LargeTitleText</item>
+    </style>
+
+    <style name="SmallBodyText">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="LargeBodyText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MediumBodyText">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="SmallTitleText">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MediumTitleText">
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="LargeTitleText">
+        <item name="android:textSize">27sp</item>
+    </style>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="@dimen/margin_smallest"
+    android:elevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_radius">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayoutProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/productListImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_parameter"
+            android:cropToPadding="true"
+            android:background="?attr/selectableItemBackground"
+            android:foreground="@drawable/image_gradient"
+            android:transitionName="commonImage"
+            tools:ignore="ContentDescription,UnusedAttribute"/>
+
+
+        <TextView
+            android:id="@+id/productListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/productListDesc"
+            android:layout_alignParentStart="true"
+            android:letterSpacing="0.02"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingEnd="@dimen/padding_small"
+            android:paddingStart="@dimen/padding_small"
+            android:shadowColor="@color/black_1"
+            android:shadowRadius="5"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:theme="@style/LargeBodyText"
+            tools:text="Headline" />
+
+        <TextView
+            android:id="@+id/productListDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/productListImage"
+            android:lineSpacingExtra="6sp"
+            android:padding="@dimen/padding_small"
+            android:textColor="?attr/text_color_secondary"
+            tools:text="filler" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:layout_below="@id/productListDesc"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginStart="@dimen/padding_small"
+            android:background="@color/greyColor" />
+
+        <TextView
+            android:id="@+id/productListCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider"
+            android:layout_margin="@dimen/margin_smallest"
+            android:padding="@dimen/padding_smaller"
+            android:textColor="@color/gray_deep"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/productListStateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/productListCategoryName"
+            android:layout_alignBottom="@+id/productListCategoryName"
+            android:layout_toEndOf="@+id/productListCategoryName"
+            android:padding="@dimen/padding_smaller"
+            android:text="West Bengal"
+            android:textAlignment="viewStart"
+            android:textColor="@color/gray_deep"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

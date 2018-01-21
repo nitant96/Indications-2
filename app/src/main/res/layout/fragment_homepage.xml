@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="gov.cipam.gi.activities.HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smaller"
+            android:layout_weight="2"
+            android:background="?attr/layout_bg">
+
+            <TextView
+                android:id="@+id/states_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/padding_smaller"
+                android:text="States"
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color_primary"
+                android:textStyle="bold"
+                android:theme="@style/LargeBodyText"
+                android:typeface="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_states"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/states_text" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_smaller"
+            android:layout_weight="2"
+            android:background="?attr/layout_bg">
+
+            <TextView
+                android:id="@+id/Categories_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/padding_smaller"
+                android:text="Categories"
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color_primary"
+                android:textStyle="bold"
+                android:theme="@style/LargeBodyText"
+                android:typeface="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Categories_text" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/suggestionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/suggestionImage"
+        app:layout_constraintTop_toTopOf="@+id/suggestionImage" />
+
+    <ImageView
+        android:id="@+id/suggestionImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <TextView
+        android:id="@+id/suggestionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/button_gradient_color_2"
+        app:layout_constraintStart_toEndOf="@+id/suggestionImage"
+        app:layout_constraintTop_toBottomOf="@+id/suggestionName" />
+</android.support.constraint.ConstraintLayout>
